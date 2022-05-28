@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d192b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 87.5%;
+  max-width: 35.22rem;
+  padding: 2.32rem;
+  background-color: #14253d;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.container .image {
+  position: relative;
+  width: 100%;
+}
+
+.container .image .image-ethereum {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.container .image .image-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background-color: #00fff7;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+
+.container .image .image-overlay:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container .title {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 1.8rem;
+}
+
+.container .title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .container .title {
+    margin-top: 2.25rem;
+  }
+}
+
+.container .message {
+  color: #8bacda;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-top: 1.1735rem;
+}
+
+@media (min-width: 1440px) {
+  .container .message {
+    font-size: 1.7rem;
+    line-height: 2.55rem;
+    margin-top: 1.7rem;
+  }
+}
+
+.container .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #2f415b;
+}
+
+.container .details .price,
+.container .details .time-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .details .price img,
+.container .details .time-left img {
+  margin-right: 0.49rem;
+}
+
+@media (min-width: 1440px) {
+  .container .details .price,
+  .container .details .time-left {
+    font-size: 1.5rem;
+  }
+}
+
+.container .details .price p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00fff7;
+}
+
+.container .details .time-left {
+  color: #8bacda;
+}
+
+.container .details .time-left img {
+  width: 1.5rem;
+}
+
+.container .details .time-left p {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1440px) {
+  .container .details {
+    margin-top: 2.53rem;
+    padding-bottom: 2.53rem;
+  }
+}
+
+.container .creator {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.container .creator .creator-img {
+  width: 12.2%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.container .creator-info {
+  width: 88%;
+  font-size: 1.44rem;
+  color: #8bacda;
+  padding-left: 1.5rem;
+}
+
+.container .creator-info .name {
+  color: white;
+}
+
+.container .creator-info .name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .container .creator-info {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

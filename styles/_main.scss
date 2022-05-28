@@ -1,0 +1,143 @@
+.container {
+  width: 87.5%;
+  max-width: 35.22rem;
+  padding: 2.32rem;
+  background-color: $card-bg;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+
+  .image {
+    position: relative;
+    width: 100%;
+
+    .image-ethereum {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+
+    .image-overlay {
+      width: 100%;
+      height: 100%;
+      border-radius: 2%;
+      @include flex(center);
+      position: absolute;
+      background-color: $cyan;
+      transform: translateY(-100%);
+      opacity: 0;
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .title {
+    font-size: 2.1rem;
+    font-weight: weights(bold);
+    color: $white;
+    margin-top: 1.8rem;
+
+    &:hover {
+      color: $cyan;
+      cursor: pointer;
+    }
+
+    @include desktop {
+      margin-top: 2.25rem;
+    }
+  }
+
+  .message {
+    color: $soft-blue;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-top: 1.1735rem;
+
+    @include desktop {
+      font-size: 1.7rem;
+      line-height: 2.55rem;
+      margin-top: 1.7rem;
+    }
+  }
+
+  .details {
+    @include flex(space-between);
+    margin-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid $line;
+
+    .price,
+    .time-left {
+      @include flex(space-between);
+      img {
+        margin-right: 0.49rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
+      }
+    }
+
+    .price {
+      p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $cyan;
+      }
+    }
+
+    .time-left {
+      color: $soft-blue;
+
+      img {
+        width: 1.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    @include desktop {
+      margin-top: 2.53rem;
+      padding-bottom: 2.53rem;
+    }
+  }
+
+  .creator {
+    width: 100%;
+    @include flex(space-between);
+    margin-top: 1.5rem;
+
+    .creator-img {
+      width: 12.2%;
+      border: 2px solid $white;
+      border-radius: 50%;
+    }
+
+    &-info {
+      width: 88%;
+      font-size: 1.44rem;
+      color: $soft-blue;
+      padding-left: 1.5rem;
+
+      .name {
+        color: $white;
+
+        &:hover {
+          color: $cyan;
+          cursor: pointer;
+        }
+      }
+
+      @include desktop {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

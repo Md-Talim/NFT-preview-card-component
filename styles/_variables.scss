@@ -1,0 +1,30 @@
+// Variables
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+$font: 'Outfit';
+$desktop: 1440px;
+$font-weights: (
+  'bold': 600,
+  'semi-bold': 400,
+  'normal': 300,
+);
+
+@function weights($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@mixin flex($justify-content) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify-content;
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
